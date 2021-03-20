@@ -1,4 +1,4 @@
-import { PLUS, MINUS } from './actionTypes';
+import { PLUS, MINUS, CUSTOM, ZERO} from './actionTypes';
 
 export function PlusAction() {
     return {
@@ -9,5 +9,18 @@ export function PlusAction() {
 export function MinusAction() {
     return {
         type: MINUS,
+    }
+}
+
+export function CustomAction(diff: number) {
+    return {
+        type: CUSTOM,
+        payload: diff,
+    }
+}
+
+export function ZeroAction(){
+    return {
+        type: ZERO,
     }
 }
