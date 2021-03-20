@@ -1,5 +1,6 @@
 export interface Action {
-    type: String;
+    type: string;
+    payload: number;
 }
 
 export interface RootState {
